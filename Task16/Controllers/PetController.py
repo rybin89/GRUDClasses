@@ -59,6 +59,7 @@ class PetController:
             if dict['type'] == type:
                 result = f'Есть {type}'
         return result
+
 if __name__ == "__main__":
     print(PetController.get())
     print(PetController.add('Машка', "Кошка", 5, 'Мария'))
