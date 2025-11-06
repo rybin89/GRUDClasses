@@ -1,4 +1,5 @@
-from Tasks import Tasks
+from Task_1.Models.Tasks import Tasks
+from Task_1.Models.TaskModel import Task
 class MyTasks:
     '''
     : Управлять списком задач с полями: id, задача, статус (выполнено/невыполнено)
@@ -65,7 +66,7 @@ class MyTasks:
             if dict['id'] == id:
                 cls.get().remove(dict)
 if __name__ == "__main__":
-    # task = MyTasks()
+    # task = Task_1()
     # print(task.tasks)
     # task.add("Сходить в ЯМК")
     # print(task.tasks)
