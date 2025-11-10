@@ -1,0 +1,14 @@
+from Task_4.Models.BaseModel import *
+
+class Movie(BaseModel):
+    '''
+    movies = [{"id": 1, "title": "Крестный отец", "year": 1972, "rating": 9.2, "watched":True}]
+    '''
+    id = PrimaryKeyField()
+    title = CharField()
+    year = IntegerField()
+    rating = FloatField(default=0.0)
+    watched = BooleanField(default=False)
+
+if __name__ == "__main__":
+    mysql_db.create_tables([Movie])
