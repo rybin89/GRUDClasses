@@ -30,6 +30,9 @@ class MovieController:
     @classmethod
     def get_watched_false(cls):
         return Movie.select().where(Movie.watched == False)
+    @classmethod
+    def get(cls):
+        return Movie.select()
 if __name__ == "__main__":
     # MovieController.add(
     #     'Крёстный отец',
